@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenny Zou — Product Manager & Business Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">Kenny</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+          <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
+          <li><a href="#experience" data-en="Experience" data-zh="经历">Experience</a></li>
+          <li><a href="#projects" data-en="Projects" data-zh="项目">Projects</a></li>
+          <li><a href="#thinking" data-en="Thinking" data-zh="思维">Thinking</a></li>
+          <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+            <span class="lang-text" data-en="EN" data-zh="中">EN</span>
+          </button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+            <span class="theme-icon theme-icon--light">☀️</span>
+            <span class="theme-icon theme-icon--dark">🌙</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1: HERO
+       ============================================================ -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-main">
+        <div class="hero-text">
+          <p class="hero-label" data-en="Hello, I'm" data-zh="你好，我是">Hello, I'm</p>
+          <h1 class="hero-name" data-en="Kenny Zou" data-zh="邹凯意">Kenny Zou</h1>
+          <h2 class="hero-title" 
+              data-en="Interested in: Product Manager • Business Analyst • Data-Driven Strategist" 
+              data-zh="专业方向：产品经理 • 商业分析师 • 数据驱动战略家">
+            Interested in: Product Manager &nbsp;&middot;&nbsp; Business Analyst &nbsp;&middot;&nbsp; Data-Driven Strategist
+          </h2>
+          <p class="hero-tagline" 
+             data-en="Bridging technology, data, and business strategy to build impactful solutions." 
+             data-zh="连接技术、数据与商业战略，构建有价值的解决方案。">
+            Bridging technology, data, and business strategy to build impactful solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" data-en="View Projects" data-zh="查看项目">View Projects</a>
+            <a href="KennyResume.pdf"
+                class="btn btn-dark"
+                download="Kenny_Zou_Product_Manager_Resume.pdf"
+                target="_blank">
+                Download Resume
+            </a>            
+            <a href="https://github.com/KennyZou4468" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-container">
+            <img src="photo.JPG" alt="Kenny Zou Profile Photo" class="profile-photo">
+            <div class="photo-placeholder">
+              <span class="photo-text">Photo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: ABOUT ME
+       ============================================================ -->
+  <section id="about" class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading" data-en="About Me" data-zh="关于我">About Me</h2>
+      <div class="about-grid">
+        <!-- Bio text -->
+        <div class="about-text">
+          <p data-en="I am a Computer Science undergraduate at The Chinese University of Hong Kong (Shenzhen) (2022-2026), minoring in economics (In progress). I maintain a strong academic record with a Major GPA of 3.79/4.0 and Overall GPA of 3.71/4.0 from year 1 to year 3. I have been recognized on the Dean's List three consecutive times, demonstrating consistent academic excellence." 
+             data-zh="我是香港中文大学（深圳）计算机科学与技术专业的本科生（2022-2026），目前正在辅修经济学。我在过去三年中保持着优异的学术成绩，专业GPA 3.79/4.0，总GPA 3.71/4.0。我连续三次获得院长名单认可，展现了持续的学术卓越表现。">
+            I am a <strong>Computer Science</strong> undergraduate at <strong>The Chinese University of Hong Kong (Shenzhen)</strong>
+            (2022-2026), <strong>minoring in economics</strong> (In progress).
+            I maintain a strong academic record with a <strong>Major GPA of 3.79/4.0</strong> and 
+            <strong>Overall GPA of 3.71/4.0</strong> from year 1 to year 3. 
+            I have been <strong>recognized on the Dean's List three consecutive times</strong>,
+            demonstrating consistent academic excellence.
+          </p>
+          <p data-en="My coursework spans technical subjects like Java, Python, C++ programming language, Basic probability and statistics, Database Systems and business subjects like Intermediate Microeconomics, Econometrics, Game Theory & Business Strategy, and Business Machine Learning — giving me a unique blend of technical depth and business acumen. I've also achieved a GRE score of 325 (perfect math score) and received an MSBA offer from NUS." 
+             data-zh="我的课程涵盖了Java、Python、C++编程语言、基础概率统计、数据库系统等技术课程，以及中级微观经济学、计量经济学、博弈论与商业策略、商业机器学习等商科课程——这为我提供了技术深度与商业洞察力的完美结合。我还取得了GRE 325分的成绩（数学满分），并获得了新加坡国立大学商业分析硕士录取通知书。">
+            My coursework spans  <strong>technical subjects</strong> like Java, Python, C++ programing language, Basic probability and statistics, Database Systems and <strong>business subjects</strong> like Intermediate Microeconomics, Econometrics, Game Theory & Business Strategy,
+            and Business Machine Learning — giving me a unique blend of technical depth and business acumen.
+            I've also achieved a <strong>GRE score of 325 (perfect math score)</strong> and received an 
+            <strong>MSBA offer from NUS</strong>.
+          </p>
+          <p data-en="I'm passionate about translating business problems into structured analytical solutions. I approach every challenge with intuition, a data-first mindset and a clear bias toward measurable impact." 
+             data-zh="我对将商业问题转化为结构化分析解决方案充满热情。我以直觉、数据优先的思维方式以及对可衡量影响的明确偏好来应对每一个挑战。">
+            I'm passionate about translating business problems into structured analytical solutions.
+            I approach every challenge with intuition, a data-first mindset and a clear bias toward measurable impact.
+          </p>
+        </div>
+        <!-- Key highlights -->
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="highlight-number">3rd Prize</span>
+            <span class="highlight-label" data-en="12th Datang Cup Provincial Competition" data-zh="第12届大唐杯省赛三等奖">12th Datang Cup Provincial Competition</span>
+        </div>
+          <div class="highlight-item">
+            <span class="highlight-number">3x</span>
+            <span class="highlight-label" data-en="Dean's List" data-zh="院长名单">Dean's List</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">325</span>
+            <span class="highlight-label" data-en="GRE Score" data-zh="GRE成绩">GRE Score</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">NUS</span>
+            <span class="highlight-label" data-en="MSBA Offer" data-zh="商业分析硕士录取">MSBA Offer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: CORE COMPETENCIES
+       ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-heading" data-en="Core Competencies" data-zh="核心能力">Core Competencies</h2>
+      <div class="skills-grid">
+
+        <!-- Column 1: Product & Strategy -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><span class="skill-icon">&#9672;</span></div>
+          <h3 data-en="Product & Strategy" data-zh="产品与战略">Product &amp; Strategy</h3>
+          <ul>
+            <li data-en="PRD Writing" data-zh="PRD文档撰写">PRD Writing</li>
+            <li data-en="Requirement Analysis" data-zh="需求分析">Requirement Analysis</li>
+            <li data-en="Product Planning" data-zh="产品规划">Product Planning</li>
+            <li data-en="Roadmap Design" data-zh="路线图设计">Roadmap Design</li>
+            <li data-en="Competitive Analysis" data-zh="竞品分析">Competitive Analysis</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Data & Analytics -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><span class="skill-icon">&#9672;</span></div>
+          <h3 data-en="Data & Analytics" data-zh="数据与分析">Data &amp; Analytics</h3>
+          <ul>
+            <li data-en="SQL" data-zh="SQL数据库查询">SQL</li>
+            <li data-en="Basic Statistics" data-zh="基础统计学">Basic Statistics</li>
+            <li data-en="A/B Testing" data-zh="A/B测试">A/B Testing</li>
+            <li data-en="ML (Regression,Classification, Decision tree, Neural network)" data-zh="机器学习（回归、分类、决策树、神经网络）">ML (Regression,Classification, Decision tree, Neural network)</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Technical Foundation -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><span class="skill-icon">&#9672;</span></div>
+          <h3 data-en="Technical Foundation" data-zh="技术基础">Technical Foundation</h3>
+          <ul>
+            <li data-en="Backend and Frontend Development" data-zh="前端后端开发">Backend and Frontend Development</li>
+            <li data-en="Database and SQL query" data-zh="数据库与SQL查询">Database and SQL query</li>
+            <li data-en="Python" data-zh="Python编程">Python</li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Business Thinking -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><span class="skill-icon">&#9672;</span></div>
+          <h3 data-en="Business Thinking" data-zh="商业思维">Business Thinking</h3>
+          <ul>
+            <li data-en="KPI Design" data-zh="KPI指标设计">KPI Design</li>
+            <li data-en="Market Research" data-zh="市场调研">Market Research</li>
+            <li data-en="Monetization Strategy" data-zh="商业化战略">Monetization Strategy</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4: INTERNSHIP EXPERIENCE
+       ============================================================ -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading" data-en="Internship Experience" data-zh="实习经历">Internship Experience</h2>
+      <div class="experience-list">
+
+        <!-- Experience 1 -->
+        <article class="exp-card">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <h3 class="exp-role" data-en="Digital Operations Solution Assistant" data-zh="数字化运营解决方案助理">Digital Operations Solution Assistant</h3>
+            <p class="exp-company" data-en="Guangzhou Landou Software Technology Co., Ltd. | Jul 2024 - Aug 2024" data-zh="广州蓝豆软件科技有限公司 | 2024年7月 - 2024年8月">Guangzhou Landou Software Technology Co., Ltd. | Jul 2024 - Aug 2024</p>
+            <div class="exp-section">
+              <h4 data-en="Problem Addressed" data-zh="解决的问题">Problem Addressed</h4>
+              <p data-en="The company's Operation Management System (OMS) lacked comprehensive technical documentation, and the hotel data middleware platform required optimization to support growing operational demands." data-zh="公司的运营管理系统(OMS)缺乏完善的技术文档，酒店数据中台平台需要优化以支持不断增长的运营需求。">
+                The company's Operation Management System (OMS) lacked comprehensive technical documentation,
+                and the hotel data middleware platform required optimization to support growing operational demands.
+              </p>
+            </div>
+            <div class="exp-section">
+              <h4 data-en="What I Contributed" data-zh="我的贡献">What I Contributed</h4>
+              <p data-en="Assisted in developing OMS solution technical documentation, optimized hotel data middleware architecture, and completed end-to-end operational data cleaning, analysis, and visualization to provide data-driven decision support. Mastered essential office tools and developed independent data analysis capabilities." data-zh="协助制定OMS解决方案技术文档，优化酒店数据中台架构，完成端到端运营数据清洗、分析及可视化呈现，提供数据驱动的决策支持。掌握基本办公工具的使用并培养了独立的数据分析能力。">
+                Assisted in developing OMS solution technical documentation, optimized hotel data middleware architecture,
+                and completed end-to-end operational data cleaning, analysis, and visualization to provide data-driven 
+                decision support. Mastered essential office tools and developed independent data analysis capabilities.
+              </p>
+            </div>
+            <div class="exp-tags">
+              <span class="tag" data-en="Data Analysis" data-zh="数据分析">Data Analysis</span>
+              <span class="tag" data-en="Data Visualization" data-zh="数据可视化">Data Visualization</span>
+              <span class="tag" data-en="Technical Documentation" data-zh="技术文档">Technical Documentation</span>
+              <span class="tag" data-en="Data Middleware" data-zh="数据中台">Data Middleware</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience 2 -->
+        <article class="exp-card">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <h3 class="exp-role" data-en="Database Reproduction Specialist" data-zh="数据库复现专员">Database Reproduction Specialist</h3>
+            <p class="exp-company" data-en="Bird Workbench - StackOverflow Database Department | Sep 2024 - Feb 2025" data-zh="Bird Workbench - StackOverflow数据库部门 | 2024年9月 - 2025年2月">Bird Workbench - StackOverflow Database Department | Sep 2024 - Feb 2025</p>
+            <div class="exp-section">
+              <h4 data-en="Problem Addressed" data-zh="解决的问题">Problem Addressed</h4>
+              <p data-en="Reproducing complex SQL issues reported on StackOverflow in specialized database environments required deep understanding of query optimization, schema design, and edge-case handling." data-zh="在专门的数据库环境中复现StackOverflow上报告的复杂SQL问题，需要对查询优化、模式设计和边缘案例处理有深入理解。">
+                Reproducing complex SQL issues reported on StackOverflow in specialized database environments
+                required deep understanding of query optimization, schema design, and edge-case handling.
+              </p>
+            </div>
+            <div class="exp-section">
+              <h4 data-en="What I Contributed" data-zh="我的贡献">What I Contributed</h4>
+              <p data-en="Analyzed common SQL problems and systematically reproduced them in specialized database environments. Provided comprehensive debugging solutions and optimization suggestions. Gained proficiency in Python programming and MySQL database management." data-zh="分析常见的SQL问题并在专门数据库环境中系统性地复现它们。提供全面的调试解决方案和优化建议。熟练掌握了Python编程和MySQL数据库管理。">
+                Analyzed common SQL problems and systematically reproduced them in specialized database environments.
+                Provided comprehensive debugging solutions and optimization suggestions. 
+                Gained proficiency in Python programming and MySQL database management.
+              </p>
+            </div>
+            <div class="exp-tags">
+              <span class="tag" data-en="Python" data-zh="Python编程">Python</span>
+              <span class="tag" data-en="MySQL" data-zh="MySQL数据库">MySQL</span>
+              <span class="tag" data-en="SQL Optimization" data-zh="SQL优化">SQL Optimization</span>
+              <span class="tag" data-en="Database Debugging" data-zh="数据库调试">Database Debugging</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience 3 -->
+        <article class="exp-card">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <h3 class="exp-role" data-en="Solution Engineer Assistant & Product Assistant" data-zh="解决方案工程师助理及产品助理">Solution Engineer Assistant & Product Assistant</h3>
+            <p class="exp-company" data-en="Shenzhen Gaodu Innovation Technology Co., Ltd. | Jun 2025 - Aug 2025" data-zh="深圳高度创新技术有限公司 | 2025年6月 - 2025年8月">Shenzhen Gaodu Innovation Technology Co., Ltd. | Jun 2025 - Aug 2025</p>
+            <div class="exp-section">
+              <h4 data-en="Problem Addressed" data-zh="解决的问题">Problem Addressed</h4>
+              <p data-en="The company needed to evaluate multimodal AI models for urban management applications, research investment landscape, and assess innovative commercial applications like Disney's drone fireworks shows." data-zh="公司需要评估多模态AI模型在城市管理中的应用，调研投资环境，并评估迪士尼无人机烟花表演等创新商业应用。">
+                The company needed to evaluate multimodal AI models for urban management applications,
+                research investment landscape, and assess innovative commercial applications like Disney's drone fireworks shows.
+              </p>
+            </div>
+            <div class="exp-section">
+              <h4 data-en="What I Contributed" data-zh="我的贡献">What I Contributed</h4>
+              <p data-en="Tested different multimodal large models for urban management performance and participated in comparative analysis reports. Researched domestic mainstream investment institutions and compiled relevant materials. Participated in business plan writing and optimization. Conducted research on Disney drone fireworks shows, analyzing commercial applicability and innovation value." data-zh="测试不同多模态大模型在城市管理中的表现效果，并参与对比分析报告撰写。调研国内主流投资机构背景并整理相关资料。参与商业计划书的撰写与优化工作。针对迪士尼无人机烟花表演进行调研，分析其商业场景适配性与创新价值。">
+                Tested different multimodal large models for urban management performance and participated in comparative analysis reports.
+                Researched domestic mainstream investment institutions and compiled relevant materials. 
+                Participated in business plan writing and optimization. Conducted research on Disney drone fireworks shows, 
+                analyzing commercial applicability and innovation value.
+              </p>
+            </div>
+            <div class="exp-tags">
+              <span class="tag" data-en="AI Model Testing" data-zh="AI模型测试">AI Model Testing</span>
+              <span class="tag" data-en="Investment Research" data-zh="投资调研">Investment Research</span>
+              <span class="tag" data-en="Business Planning" data-zh="商业计划">Business Planning</span>
+              <span class="tag" data-en="Market Analysis" data-zh="市场分析">Market Analysis</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5: SELECTED PROJECTS
+       ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-heading" data-en="Selected Projects" data-zh="精选项目">Selected Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-card-accent"></div>
+          <h3 data-en="Abiotic Factor Web Platform" data-zh="Abiotic Factor网站平台">Abiotic Factor Web Platform</h3>
+          <div class="project-detail">
+            <h4 data-en="Problem" data-zh="问题">Problem</h4>
+            <p data-en="Created a comprehensive web platform with both frontend and backend implementation, featuring the Abiotic Factor game ecosystem." data-zh="创建一个包含前端和后端实现的综合性网站平台，以Abiotic Factor游戏生态系统为特色。">Created a comprehensive web platform with both frontend and backend implementation, featuring the Abiotic Factor game ecosystem.</p>
+          </div>
+          <div class="project-detail">
+            <h4 data-en="Approach" data-zh="方法">Approach</h4>
+            <p data-en="Developed a full-stack web application with modern frontend technologies and robust backend services, implementing user authentication, data management, and interactive features." data-zh="使用现代前端技术和强大的后端服务开发了一个全栈网络应用，实现了用户身份认证、数据管理和交互功能。">Developed a full-stack web application with modern frontend technologies and robust backend services, implementing user authentication, data management, and interactive features.</p>
+          </div>
+          <div class="project-detail">
+            <h4 data-en="Outcome" data-zh="成果">Outcome</h4>
+            <p data-en="Successfully deployed a complete web platform demonstrating full-stack development capabilities and modern web architecture patterns." data-zh="成功部署了一个完整的网站平台，展示了全栈开发能力和现代网络架构模式。">Successfully deployed a complete web platform demonstrating full-stack development capabilities and modern web architecture patterns.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag" data-en="Full-Stack" data-zh="全栈开发">Full-Stack</span>
+            <span class="tag" data-en="Frontend" data-zh="前端开发">Frontend</span>
+            <span class="tag" data-en="Backend" data-zh="后端开发">Backend</span>
+            <span class="tag" data-en="Web Development" data-zh="网站开发">Web Development</span>
+          </div>
+          <div class="project-link">
+            <a href="https://github.com/KennyZou4468/AbioticFactor-Web" target="_blank" rel="noopener noreferrer" data-en="View on GitHub →" data-zh="在GitHub上查看 →">View on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-card-accent"></div>
+          <h3 data-en="RedBook Web Crawler" data-zh="小红书网络爬虫">RedBook Web Crawler</h3>
+          <div class="project-detail">
+            <h4 data-en="Problem" data-zh="问题">Problem</h4>
+            <p data-en="Market research required large-scale content and trend data from Xiaohongshu (RedBook), but no structured dataset was available for analysis." data-zh="市场研究需要从小红书获取大量内容和趋势数据，但没有可用于分析的结构化数据集。">Market research required large-scale content and trend data from Xiaohongshu (RedBook), but no structured dataset was available for analysis.</p>
+          </div>
+          <div class="project-detail">
+            <h4 data-en="Approach" data-zh="方法">Approach</h4>
+            <p data-en="Built an automated web crawler in Python to systematically scrape posts, engagement metrics, and trend signals. Implemented rate limiting, data cleaning pipelines, and structured data storage." data-zh="使用Python构建了一个自动化的网络爬虫，系统性地抓取帖子、互动指标和趋势信号。实现了限速、数据清洗管道和结构化数据存储。">Built an automated web crawler in Python to systematically scrape posts, engagement metrics, and trend signals. Implemented rate limiting, data cleaning pipelines, and structured data storage.</p>
+          </div>
+          <div class="project-detail">
+            <h4 data-en="Outcome" data-zh="成果">Outcome</h4>
+            <p data-en="Generated a comprehensive, analysis-ready dataset enabling detailed trend analysis and content strategy insights for market research applications." data-zh="生成了一个全面的、可分析的数据集，为市场研究应用提供了详细的趋势分析和内容策略洞察。">Generated a comprehensive, analysis-ready dataset enabling detailed trend analysis and content strategy insights for market research applications.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag" data-en="Python" data-zh="Python编程">Python</span>
+            <span class="tag" data-en="Web Crawling" data-zh="网络爬虫">Web Crawling</span>
+            <span class="tag" data-en="Data Processing" data-zh="数据处理">Data Processing</span>
+            <span class="tag" data-en="Market Research" data-zh="市场研究">Market Research</span>
+          </div>
+          <div class="project-link">
+            <a href="https://github.com/KennyZou4468/RedBookWebCrawler" target="_blank" rel="noopener noreferrer" data-en="View on GitHub →" data-zh="在GitHub上查看 →">View on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-card-accent"></div>
+          <h3 data-en="Java All-Star Battle Game" data-zh="Java全明星对战游戏">Java All-Star Battle Game</h3>
+          <div class="project-detail">
+            <h4 data-en="Problem" data-zh="问题">Problem</h4>
+            <p data-en="Developed a comprehensive Java-based fighting game as part of CSC1004 coursework, requiring object-oriented design, game state management, and complex user interactions." data-zh="作为CSC1004课程作业，开发一个基于Java的综合性格斗游戏，需要面向对象设计、游戏状态管理和复杂的用户交互。">Developed a comprehensive Java-based fighting game as part of CSC1004 coursework, requiring object-oriented design, game state management, and complex user interactions.</p>
+          </div>
+          <div class="project-detail">
+            <h4 data-en="Approach" data-zh="方法">Approach</h4>
+            <p data-en="Implemented a multi-character fighting game using Java with robust OOP principles, MVC architecture, collision detection systems, and custom graphics rendering pipeline." data-zh="使用Java实现了一个多角色格斗游戏，采用健壮的面向对象原则、MVC架构、碰撞检测系统和定制图形渲染管道。">Implemented a multi-character fighting game using Java with robust OOP principles, MVC architecture, collision detection systems, and custom graphics rendering pipeline.</p>
+          </div>
+          <div class="project-detail">
+            <h4 data-en="Outcome" data-zh="成果">Outcome</h4>
+            <p data-en="Created a fully functional battle game with multiple characters, smooth gameplay mechanics, and clean code architecture demonstrating advanced Java programming skills." data-zh="创建了一个功能齐全的战斗游戏，具有多个角色、流畅的游戏机制和清晰的代码架构，展示了先进Java编程技能。">Created a fully functional battle game with multiple characters, smooth gameplay mechanics, and clean code architecture demonstrating advanced Java programming skills.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag" data-en="Java" data-zh="Java编程">Java</span>
+            <span class="tag" data-en="Object-Oriented Design" data-zh="面向对象设计">Object-Oriented Design</span>
+            <span class="tag" data-en="Game Development" data-zh="游戏开发">Game Development</span>
+            <span class="tag" data-en="GUI Programming" data-zh="GUI编程">GUI Programming</span>
+          </div>
+          <div class="project-link">
+            <a href="https://github.com/KennyZou4468/-CSC1004-Java-All-star-battle" target="_blank" rel="noopener noreferrer" data-en="View on GitHub →" data-zh="在GitHub上查看 →">View on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+  <div class="project-card-accent"></div>
+  <h3 data-en="Home Repository WeChat Mini Program" data-zh="家庭储物微信小程序">Home Repository WeChat Mini Program</h3>
+
+  <div class="project-detail">
+    <h4 data-en="Problem" data-zh="问题">Problem</h4>
+    <p data-en="Household item management is often inefficient and unstructured. Users lack a centralized system to record, categorize, and quickly retrieve stored items, leading to time loss and information fragmentation." data-zh="家庭物品管理往往效率低下且缺乏结构。用户缺乏一个集中的系统来记录、分类和快速检索存储物品，导致时间损失和信息破片化。">Household item management is often inefficient and unstructured. Users lack a centralized system to record, categorize, and quickly retrieve stored items, leading to time loss and information fragmentation.</p>
+  </div>
+
+  <div class="project-detail">
+    <h4 data-en="Approach" data-zh="方法">Approach</h4>
+    <p data-en="Designed and developed a WeChat Mini Program that enables users to digitally manage home inventory. Built structured item categorization, storage tracking, and search functionality. Implemented frontend interface logic and backend data storage with database integration to ensure smooth CRUD operations and reliable data persistence." data-zh="设计并开发了一个微信小程序，使用户能够数字化管理家庭库存。构建了结构化的物品分类、存储跟踪和搜索功能。实现了前端界面逻辑和后端数据存储，并集成数据库以确保流畅的CRUD操作和可靠的数据持久化。">Designed and developed a WeChat Mini Program that enables users to digitally manage home inventory. Built structured item categorization, storage tracking, and search functionality. Implemented frontend interface logic and backend data storage with database integration to ensure smooth CRUD operations and reliable data persistence.</p>
+  </div>
+
+  <div class="project-detail">
+    <h4 data-en="Outcome" data-zh="成果">Outcome</h4>
+    <p data-en="Delivered a lightweight, user-friendly inventory management solution within the WeChat ecosystem. Improved information organization efficiency and demonstrated end-to-end product development capability from requirement definition to deployment." data-zh="在微信生态系统内交付了一个轻量级、用户友好的库存管理解决方案。提高了信息组织效率，展示了从需求定义到部署的端到端产品开发能力。">Delivered a lightweight, user-friendly inventory management solution within the WeChat ecosystem. Improved information organization efficiency and demonstrated end-to-end product development capability from requirement definition to deployment.</p>
+  </div>
+
+  <div class="project-tags">
+    <span class="tag" data-en="WeChat Mini Program" data-zh="微信小程序">微信小程序</span>
+    <span class="tag" data-en="JavaScript" data-zh="JavaScript编程">JavaScript</span>
+    <span class="tag" data-en="Frontend Logic" data-zh="前端逻辑">Frontend Logic</span>
+    <span class="tag" data-en="Backend Integration" data-zh="后端集成">Backend Integration</span>
+    <span class="tag" data-en="Database" data-zh="数据库">Database</span>
+    <span class="tag" data-en="Vibe Coding" data-zh="Vibe编程">Vibe Coding</span>
+  </div>
+
+  <div class="project-link">
+    <a href="https://github.com/KennyZou4468/HomeRepositoryMiniProgram" target="_blank" data-en="View on GitHub →" data-zh="在GitHub上查看 →">
+      View on GitHub →
+    </a>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6: PRODUCT THINKING
+       ============================================================ -->
+  <section id="thinking" class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading" data-en="How I Think as a Product Analyst" data-zh="产品分析师的思维方式">How I Think as a Product Analyst</h2>
+      <div class="thinking-grid">
+        <div class="thinking-card">
+          <span class="thinking-num">01</span>
+          <h4 data-en="Start from User Problem Definition" data-zh="从用户问题定义开始">Start from User Problem Definition</h4>
+          <p data-en="Every initiative begins with a clearly articulated user pain point — not an assumption or a feature request." data-zh="每个项目都从一个清晰阐述的用户痛点开始——而不是一个假设或功能需求。">Every initiative begins with a clearly articulated user pain point — not an assumption or a feature request.</p>
+        </div>
+        <div class="thinking-card">
+          <span class="thinking-num">02</span>
+          <h4 data-en="Quantify Impact Before Solution" data-zh="在解决方案前量化影响">Quantify Impact Before Solution</h4>
+          <p data-en="Size the opportunity with data. Prioritize where evidence shows the highest leverage, not where opinions are loudest." data-zh="用数据衡量机会的大小。优先考虑证据显示最高杠杆作用的地方，而不是意见最响亮的地方。">Size the opportunity with data. Prioritize where evidence shows the highest leverage, not where opinions are loudest.</p>
+        </div>
+        <div class="thinking-card">
+          <span class="thinking-num">03</span>
+          <h4 data-en="Validate with Data" data-zh="用数据验证">Validate with Data</h4>
+          <p data-en="Hypotheses are cheap. I test assumptions through analytics, user research, and instrumentation before committing resources." data-zh="假设是廉价的。在投入资源之前，我通过分析、用户研究和数据工具来测试假设。">Hypotheses are cheap. I test assumptions through analytics, user research, and instrumentation before committing resources.</p>
+        </div>
+        <div class="thinking-card">
+          <span class="thinking-num">04</span>
+          <h4 data-en="Iterate with Experiments" data-zh="通过实验迭代">Iterate with Experiments</h4>
+          <p data-en="Ship small, measure fast, learn continuously. Incremental improvement compounds into transformational outcomes." data-zh="小步发布，快速测量，持续学习。渐进式改进会积累成变革性成果。">Ship small, measure fast, learn continuously. Incremental improvement compounds into transformational outcomes.</p>
+        </div>
+        <div class="thinking-card">
+          <span class="thinking-num">05</span>
+          <h4 data-en="Balance Feasibility, Viability & Desirability" data-zh="平衡可行性、可行性和合意性">Balance Feasibility, Viability &amp; Desirability</h4>
+          <p data-en="Great products live at the intersection of what users want, what the business needs, and what engineering can deliver." data-zh="优秀的产品存在于用户想要的、业务需要的和工程能够交付的交叉点。">Great products live at the intersection of what users want, what the business needs, and what engineering can deliver.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7: CONTACT
+       ============================================================ -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h2 class="section-heading section-heading--light" data-en="Get in Touch" data-zh="联系我">Get in Touch</h2>
+      <p class="footer-text" data-en="I'm open to discussing product opportunities, analytical challenges, and strategic roles." data-zh="我喜欢讨论产品机会、分析挑战和战略角色。">
+        I'm open to discussing product opportunities, analytical challenges, and strategic roles.
+      </p>
+      <p class="footer-text" data-en="I'm open to jobs and internships in product management, business analysis." data-zh="我对产品管理、商业分析的工作和实习机会持开放态度。">
+        I'm open to jobs and internships in product management, business analysis.
+      </p>
+      <div class="footer-links">
+        <a href="mailto:122090852@link.cuhk.edu.cn" class="footer-link-item">
+          <span class="footer-link-label" data-en="Email" data-zh="邮箱">Email</span>
+          122090852@link.cuhk.edu.cn
+        </a>
+        <a href="https://github.com/KennyZou4468" class="footer-link-item" target="_blank" rel="noopener noreferrer">
+          <span class="footer-link-label" data-en="GitHub" data-zh="GitHub">GitHub</span>
+          github.com/KennyZou4468
+        </a>
+        <a href="https://linkedin.com/" class="footer-link-item" target="_blank" rel="noopener noreferrer">
+          <span class="footer-link-label" data-en="LinkedIn" data-zh="领英">LinkedIn</span>
+          linkedin.com/in/kennyzou
+        </a>
+      </div>
+      <p class="footer-copy" data-en="© 2026 Kenny Zou · All rights reserved." data-zh="© 2026 邹凯意 · 版权所有">&copy; 2026 Kenny Zou &middot; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    
+    // Set initial theme
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Language Toggle Functionality
+    const langToggle = document.getElementById('langToggle');
+    const langText = document.querySelector('.lang-text');
+    let currentLang = localStorage.getItem('language') || 'en';
+    
+    // Set initial language
+    updateLanguage(currentLang);
+    
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'zh' : 'en';
+      updateLanguage(currentLang);
+      localStorage.setItem('language', currentLang);
+    });
+    
+    function updateLanguage(lang) {
+      // Update language toggle button text
+      langText.textContent = langText.getAttribute(`data-${lang}`);
+      
+      // Update all elements with data attributes
+      const elements = document.querySelectorAll('[data-en][data-zh]');
+      elements.forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) {
+          if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+            element.placeholder = text;
+          } else {
+            element.textContent = text;
+          }
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
