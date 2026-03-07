@@ -446,6 +446,17 @@ img { max-width: 100%; display: block; }
   color: var(--accent);
 }
 
+.btn-pink {
+  background: #ec4899;
+  color: #ffffff;
+  border-color: #ec4899;
+}
+.btn-pink:hover {
+  background: #db2777;
+  border-color: #db2777;
+  box-shadow: var(--shadow-sm);
+}
+
 /* --------------------------------------------------------
    8. ABOUT
    -------------------------------------------------------- */
