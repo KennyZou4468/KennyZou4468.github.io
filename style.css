@@ -136,6 +136,11 @@ img { max-width: 100%; display: block; }
   background: rgba(255,255,255,.35);
 }
 
+.section-heading--internship {
+  font-size: 1.9rem;
+  letter-spacing: -.025em;
+}
+
 /* --------------------------------------------------------
    5. NAVIGATION
    -------------------------------------------------------- */
@@ -188,11 +193,23 @@ img { max-width: 100%; display: block; }
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: .04em;
-  transition: color .2s;
+  transition: color .2s, border-color .2s;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
 }
 
 .nav-links a:hover {
   color: var(--accent);
+}
+
+.nav-links a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.nav-links a.active:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
 }
 
 .nav-controls {
@@ -408,10 +425,13 @@ img { max-width: 100%; display: block; }
   padding: 11px 26px;
   font-size: .88rem;
   font-weight: 600;
+  font-family: inherit;
+  line-height: 1.25;
   border-radius: var(--radius-sm);
   transition: background .2s, color .2s, border-color .2s, box-shadow .2s;
   cursor: pointer;
   border: 1.5px solid transparent;
+  appearance: none;
 }
 
 .btn-primary {
@@ -457,8 +477,84 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-sm);
 }
 
+.resume-dropdown {
+  position: relative;
+}
+
+.resume-trigger {
+  min-width: 0;
+}
+
+.resume-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.resume-option {
+  display: block;
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: .86rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+}
+
+.resume-option:last-child {
+  border-bottom: none;
+}
+
+.resume-option:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
 /* --------------------------------------------------------
-   8. ABOUT
+   8. MOTION
+   -------------------------------------------------------- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px) scale(.985);
+  filter: blur(2px);
+  transition: opacity .6s ease, transform .6s ease, filter .6s ease;
+  will-change: opacity, transform, filter;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.hero-buttons .btn {
+  animation: heroBtnIn .7s ease backwards;
+}
+
+.hero-buttons .btn:nth-child(1) { animation-delay: .04s; }
+.hero-buttons .btn:nth-child(2) { animation-delay: .12s; }
+.hero-buttons .btn:nth-child(3) { animation-delay: .2s; }
+.hero-buttons .btn:nth-child(4) { animation-delay: .28s; }
+
+@keyframes heroBtnIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------------
+   9. ABOUT
    -------------------------------------------------------- */
 .about-grid {
   display: grid;
@@ -506,7 +602,76 @@ img { max-width: 100%; display: block; }
 }
 
 /* --------------------------------------------------------
-   9. CORE COMPETENCIES (SKILLS)
+  10. EDUCATION
+   -------------------------------------------------------- */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.education-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+}
+
+.education-logo-wrap {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+}
+
+.education-logo {
+  width: auto;
+  max-width: 100%;
+  height: 68px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.education-card--next {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--accent-light) 65%, var(--bg-alt));
+}
+
+.education-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.education-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.education-school {
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.education-meta {
+  color: var(--text-secondary);
+  font-size: .95rem;
+  margin-bottom: 4px;
+}
+
+/* --------------------------------------------------------
+  11. CORE COMPETENCIES (SKILLS)
    -------------------------------------------------------- */
 .skills-grid {
   display: grid;
@@ -756,6 +921,66 @@ img { max-width: 100%; display: block; }
   border-color: transparent;
 }
 
+/* --------------------------------------------------------
+   13. GAMING EXPERIENCE
+   -------------------------------------------------------- */
+.gaming-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.gaming-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: box-shadow .2s, border-color .2s, transform .2s;
+}
+
+.gaming-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+.gaming-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.gaming-meta {
+  font-size: .84rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.gaming-points {
+  list-style: none;
+}
+
+.gaming-points li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.gaming-points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: .55;
+}
+
 .thinking-num {
   display: inline-block;
   font-size: 1.6rem;
@@ -839,6 +1064,10 @@ img { max-width: 100%; display: block; }
     grid-template-columns: 1fr;
   }
 
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-highlights {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -852,6 +1081,10 @@ img { max-width: 100%; display: block; }
   }
 
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gaming-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -893,6 +1126,19 @@ img { max-width: 100%; display: block; }
     text-align: center;
   }
 
+  .resume-dropdown {
+    width: 100%;
+  }
+
+  .resume-trigger {
+    width: 100%;
+  }
+
+  .resume-menu {
+    width: 100%;
+    min-width: 0;
+  }
+
   .photo-container {
     width: 200px;
     height: 200px;
@@ -929,5 +1175,18 @@ img { max-width: 100%; display: block; }
   .footer-links {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .hero-buttons .btn {
+    animation: none;
   }
 }

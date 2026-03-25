@@ -15,9 +15,11 @@
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="#about" data-en="About" data-zh="关于我">About</a></li>
+          <li><a href="#education" data-en="Education" data-zh="学历">Education</a></li>
           <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
-          <li><a href="#experience" data-en="Experience" data-zh="经历">Experience</a></li>
+          <li><a href="#experience" data-en="Internship" data-zh="实习">Internship</a></li>
           <li><a href="#projects" data-en="Projects" data-zh="项目">Projects</a></li>
+          <li><a href="#gaming" data-en="Gaming" data-zh="游戏经历">Gaming</a></li>
           <li><a href="#thinking" data-en="Thinking" data-zh="思维">Thinking</a></li>
           <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
         </ul>
@@ -44,9 +46,9 @@
           <p class="hero-label" data-en="Hello, I'm" data-zh="你好，我是">Hello, I'm</p>
           <h1 class="hero-name" data-en="Kenny Zou" data-zh="邹凯意">Kenny Zou</h1>
           <h2 class="hero-title" 
-              data-en="Interested in: Product Manager • Business Analyst • Data-Driven Strategist" 
-              data-zh="专业方向：产品经理 • 商业分析师 • 数据驱动战略家">
-            Interested in: Product Manager &nbsp;&middot;&nbsp; Business Analyst &nbsp;&middot;&nbsp; Data-Driven Strategist
+              data-en="Interested in: Product Manager • Business Analyst • Data-Driven Strategist • Game Planner • Game operations" 
+              data-zh="专业方向：产品经理 • 商业分析师 • 数据驱动战略家 • 游戏策划 • 游戏运营">
+            Interested in: Product Manager &nbsp;&middot;&nbsp; Business Analyst &nbsp;&middot;&nbsp; Data-Driven Strategist &nbsp;&middot;&nbsp; Game Planner &nbsp;&middot;&nbsp; Game operations
           </h2>
           <p class="hero-tagline" 
              data-en="Bridging technology, data, and business strategy to build impactful solutions." 
@@ -55,12 +57,43 @@
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary" data-en="View Projects" data-zh="查看项目">View Projects</a>
-            <a href="KennyResume.pdf"
-                class="btn btn-dark"
-                download="Kenny_Zou_Product_Manager_Resume.pdf"
-                target="_blank">
+            <div class="resume-dropdown" id="resumeDropdown">
+              <button
+                class="btn btn-dark resume-trigger"
+                id="resumeToggle"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-en="Download Resume"
+                data-zh="下载简历"
+              >
                 Download Resume
-            </a>            
+              </button>
+              <div class="resume-menu" id="resumeMenu" hidden>
+                <a
+                  href="KennyResume_Game_Industry.pdf"
+                  class="resume-option"
+                  download="Kenny_Zou_Game_Industry_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-en="Game Industry Resume"
+                  data-zh="游戏行业简历"
+                >
+                  Game Industry Resume
+                </a>
+                <a
+                  href="KennyResume_Product.pdf"
+                  class="resume-option"
+                  download="Kenny_Zou_Product_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-en="Product Resume"
+                  data-zh="产品简历"
+                >
+                  Product Resume
+                </a>
+              </div>
+            </div>
             <a href="https://github.com/KennyZou4468" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://space.bilibili.com/37177902?spm_id_from=333.1007.0.0" class="btn btn-pink" target="_blank" rel="noopener noreferrer" data-en="Bilibili" data-zh="哔哩哔哩">Bilibili</a>
           </div>
@@ -87,26 +120,17 @@
       <div class="about-grid">
         <!-- Bio text -->
         <div class="about-text">
-          <p data-en="I am a Computer Science undergraduate at The Chinese University of Hong Kong (Shenzhen) (2022-2026), minoring in economics (In progress). I maintain a strong academic record with a Major GPA of 3.79/4.0 and Overall GPA of 3.71/4.0 from year 1 to year 3. I have been recognized on the Dean's List three consecutive times, demonstrating consistent academic excellence." 
-             data-zh="我是香港中文大学（深圳）计算机科学与技术专业的本科生（2022-2026），目前正在辅修经济学。我在过去三年中保持着优异的学术成绩，专业GPA 3.79/4.0，总GPA 3.71/4.0。我连续三次获得院长名单认可，展现了持续的学术卓越表现。">
-            I am a <strong>Computer Science</strong> undergraduate at <strong>The Chinese University of Hong Kong (Shenzhen)</strong>
-            (2022-2026), <strong>minoring in economics</strong> (In progress).
-            I maintain a strong academic record with a <strong>Major GPA of 3.79/4.0</strong> and 
-            <strong>Overall GPA of 3.71/4.0</strong> from year 1 to year 3. 
-            I have been <strong>recognized on the Dean's List three consecutive times</strong>,
-            demonstrating consistent academic excellence.
+          <p data-en="I am an <strong><u>undergraduate in Computer Science</u></strong> at <strong>The Chinese University of Hong Kong (Shenzhen)</strong> (2022-2026), with a <strong><u>minor in Economics</u></strong>. I maintain a strong academic record with a <strong>Major GPA of 3.7/4.0</strong> and <strong>Overall GPA of 3.7/4.0</strong> from year 1 to year 3. I have been <strong><u>recognized on the Dean's List three consecutive times</u></strong>, demonstrating consistent academic excellence."
+             data-zh="我是香港中文大学（深圳）<strong><u>计算机科学与技术主修</u></strong>本科生（2022-2026），并辅修<strong><u>经济学</u></strong>。我在过去三年中保持优异成绩，专业GPA <strong>3.7/4.0</strong>，总GPA <strong>3.7/4.0</strong>。我已<strong><u>连续三次入选院长名单</u></strong>，展现了持续稳定的学术表现。">
+            I am an <strong><u>undergraduate in Computer Science</u></strong> at <strong>The Chinese University of Hong Kong (Shenzhen)</strong> (2022-2026), with a <strong><u>minor in Economics</u></strong>. I maintain a strong academic record with a <strong>Major GPA of 3.7/4.0</strong> and <strong>Overall GPA of 3.71/4.0</strong> from year 1 to year 3. I have been <strong><u>recognized on the Dean's List three consecutive times</u></strong>, demonstrating consistent academic excellence.
           </p>
-          <p data-en="My coursework spans technical subjects like Java, Python, C++ programming language, Basic probability and statistics, Database Systems and business subjects like Intermediate Microeconomics, Econometrics, Game Theory & Business Strategy, and Business Machine Learning — giving me a unique blend of technical depth and business acumen. I've also achieved a GRE score of 325 (perfect math score) and received an MSBA offer from NUS and an ISTM offer from CUHKSZ." 
-             data-zh="我的课程涵盖了Java、Python、C++编程语言、基础概率统计、数据库系统等技术课程，以及中级微观经济学、计量经济学、博弈论与商业策略、商业机器学习等商科课程——这为我提供了技术深度与商业洞察力的完美结合。我还取得了GRE 325分的成绩（数学满分），并已录取了新加坡国立大学商业分析硕士和香港中文大学ISTM硕士。">
-            My coursework spans  <strong>technical subjects</strong> like Java, Python, C++ programing language, Basic probability and statistics, Database Systems and <strong>business subjects</strong> like Intermediate Microeconomics, Econometrics, Game Theory & Business Strategy,
-            and Business Machine Learning — giving me a unique blend of technical depth and business acumen.
-            I've also achieved a <strong>GRE score of 325 (perfect math score)</strong> and received an 
-            <strong>MSBA offer from NUS</strong>.
+          <p data-en="My coursework spans <strong><u>technical foundations</u></strong> (Java, Python, C++, statistics, and database systems) and <strong><u>business analytics subjects</u></strong> (microeconomics, econometrics, game theory, strategy, and business machine learning), giving me a balanced profile across product, data, and strategy. I also achieved a <strong>GRE score of 325</strong> with a <strong><u>perfect quantitative score</u></strong>, and received an <strong>MSBA offer from NUS</strong>."
+             data-zh="我的课程覆盖<strong><u>技术基础</u></strong>（Java、Python、C++、统计学、数据库系统）与<strong><u>商业分析方向</u></strong>（微观经济学、计量经济学、博弈与战略、商业机器学习），形成了产品、数据与商业的复合能力。我还取得了<strong>GRE 325 分</strong>，其中<strong><u>数学满分</u></strong>，并已获得<strong>NUS MSBA 录取</strong>。">
+            My coursework spans <strong><u>technical foundations</u></strong> (Java, Python, C++, statistics, and database systems) and <strong><u>business analytics subjects</u></strong> (microeconomics, econometrics, game theory, strategy, and business machine learning), giving me a balanced profile across product, data, and strategy. I also achieved a <strong>GRE score of 325</strong> with a <strong><u>perfect quantitative score</u></strong>, and received an <strong>MSBA offer from NUS</strong>.
           </p>
-          <p data-en="I'm passionate about translating business problems into structured analytical solutions. I approach every challenge with intuition, a data-first mindset and a clear bias toward measurable impact." 
-             data-zh="我对将商业问题转化为结构化分析解决方案充满热情。我以直觉、数据优先的思维方式以及对可衡量影响的明确偏好来应对每一个挑战。">
-            I'm passionate about translating business problems into structured analytical solutions.
-            I approach every challenge with intuition, a data-first mindset and a clear bias toward measurable impact.
+          <p data-en="I'm passionate about translating business problems into <strong><u>structured analytical solutions</u></strong>. I approach every challenge with a <strong>data-first mindset</strong> and a clear bias toward <strong><u>measurable impact</u></strong>."
+             data-zh="我热衷于将商业问题转化为<strong><u>结构化分析方案</u></strong>。我坚持<strong>数据优先</strong>的方法，并始终关注<strong><u>可衡量的业务影响</u></strong>。">
+            I'm passionate about translating business problems into <strong><u>structured analytical solutions</u></strong>. I approach every challenge with a <strong>data-first mindset</strong> and a clear bias toward <strong><u>measurable impact</u></strong>.
           </p>
         </div>
         <!-- Key highlights -->
@@ -133,7 +157,38 @@
   </section>
 
   <!-- ============================================================
-       SECTION 3: CORE COMPETENCIES
+       SECTION 3: EDUCATION
+       ============================================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-heading" data-en="Education" data-zh="学历">Education</h2>
+      <div class="education-grid">
+        <article class="education-card">
+          <div class="education-logo-wrap">
+            <img src="CUHKSZ.png" alt="CUHKSZ Logo" class="education-logo">
+          </div>
+          <span class="education-badge" data-en="Current" data-zh="当前">Current</span>
+          <h3 data-en="B.Eng. in Computer Science" data-zh="计算机科学与技术本科">B.Eng. in Computer Science</h3>
+          <p class="education-school" data-en="The Chinese University of Hong Kong (Shenzhen)" data-zh="香港中文大学（深圳）">The Chinese University of Hong Kong (Shenzhen)</p>
+          <p class="education-meta" data-en="Major: Computer Science | Minor: Economics" data-zh="主修：计算机科学与技术 | 辅修：经济学">Major: Computer Science | Minor: Economics</p>
+          <p class="education-meta" data-en="2022 - 2026" data-zh="2022 - 2026">2022 - 2026</p>
+        </article>
+
+        <article class="education-card education-card--next">
+          <div class="education-logo-wrap">
+            <img src="NUS.jpg" alt="NUS Logo" class="education-logo">
+          </div>
+          <span class="education-badge" data-en="Next" data-zh="下一阶段">Next</span>
+          <h3 data-en="M.S. in Business Analytics (MSBA)" data-zh="商业分析硕士（MSBA）">M.S. in Business Analytics (MSBA)</h3>
+          <p class="education-school" data-en="National University of Singapore (NUS)" data-zh="新加坡国立大学（NUS）">National University of Singapore (NUS)</p>
+          <p class="education-meta" data-en="Admitted, upcoming enrollment" data-zh="已录取，待入学">Admitted, upcoming enrollment</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4: CORE COMPETENCIES
        ============================================================ -->
   <section id="skills" class="section">
     <div class="container">
@@ -196,7 +251,7 @@
        ============================================================ -->
   <section id="experience" class="section section--alt">
     <div class="container">
-      <h2 class="section-heading" data-en="Internship Experience" data-zh="实习经历">Internship Experience</h2>
+      <h2 class="section-heading section-heading--internship" data-en="Internship" data-zh="实习经历">Internship</h2>
       <div class="experience-list">
 
         <!-- Experience 1 -->
@@ -449,7 +504,46 @@
   </section>
 
   <!-- ============================================================
-       SECTION 6: PRODUCT THINKING
+       SECTION 6: GAMING EXPERIENCE
+       ============================================================ -->
+  <section id="gaming" class="section">
+    <div class="container">
+      <h2 class="section-heading" data-en="Gaming Experience" data-zh="游戏经历">Gaming Experience</h2>
+      <div class="gaming-grid">
+        <article class="gaming-card">
+          <h3 data-en="CS:GO | First-Person Shooter (FPS)" data-zh="《CS:GO》｜射击类（FPS）">CS:GO | First-Person Shooter (FPS)</h3>
+          <p class="gaming-meta" data-en="Active Period: 1-3 years | 5E Platform: B+" data-zh="活跃时长：1-3年｜5E平台：B+">Active Period: 1-3 years | 5E Platform: B+</p>
+          <ul class="gaming-points">
+            <li data-en="Strong understanding of FPS core experience: weapon feel, map flow, economy system, and team coordination." data-zh="深度理解竞技射击游戏核心体验：枪械手感、地图节奏、经济系统与团队协作。">Strong understanding of FPS core experience: weapon feel, map flow, economy system, and team coordination.</li>
+            <li data-en="Long-term viewer of pro tournaments (e.g., Major); familiar with tactical systems such as map control, resource allocation, and attack-defense tempo." data-zh="长期观看职业赛事（如 Major），理解控图、资源分配、攻防节奏等职业战术体系。">Long-term viewer of pro tournaments (e.g., Major); familiar with tactical systems such as map control, resource allocation, and attack-defense tempo.</li>
+            <li data-en="Compared titles such as CrossFire and NZ; can analyze balancing, pacing, and monetization trade-offs." data-zh="对比体验《CF》《逆战》等 FPS，可从数值平衡、节奏设计与商业化模式角度分析。">Compared titles such as CrossFire and NZ; can analyze balancing, pacing, and monetization trade-offs.</li>
+          </ul>
+        </article>
+
+        <article class="gaming-card">
+          <h3 data-en="Stardew Valley | Simulation" data-zh="《星露谷物语》｜模拟经营类">Stardew Valley | Simulation</h3>
+          <p class="gaming-meta" data-en="Playtime: 200-500h | Multiple Achievements Unlocked" data-zh="游戏时长：200-500h｜达成多项成就">Playtime: 200-500h | Multiple Achievements Unlocked</p>
+          <ul class="gaming-points">
+            <li data-en="Familiar with long-loop design: resource accumulation → facility upgrade → content unlock." data-zh="熟悉模拟经营的长期循环：资源积累 → 设施升级 → 内容解锁。">Familiar with long-loop design: resource accumulation → facility upgrade → content unlock.</li>
+            <li data-en="Focus on balancing guided goals with free exploration." data-zh="关注目标引导与自由探索之间的平衡。">Focus on balancing guided goals with free exploration.</li>
+            <li data-en="Analyze how quest systems, seasonal festivals, and NPC relationship progression improve immersion and retention." data-zh="分析任务系统、节日活动与 NPC 关系成长如何提升沉浸感与留存。">Analyze how quest systems, seasonal festivals, and NPC relationship progression improve immersion and retention.</li>
+          </ul>
+        </article>
+
+        <article class="gaming-card">
+          <h3 data-en="Open-World Action Games (e.g., Cyberpunk 2077)" data-zh="开放世界动作游戏（代表：《赛博朋克2077》）">Open-World Action Games (e.g., Cyberpunk 2077)</h3>
+          <p class="gaming-meta" data-en="Playtime: 20-200h | Multi-ending Experience" data-zh="游戏时长：20-200h｜多结局体验">Playtime: 20-200h | Multi-ending Experience</p>
+          <ul class="gaming-points">
+            <li data-en="Deep hands-on experience across titles such as Red Dead Redemption, GTA, Assassin's Creed, and Fallout." data-zh="深度体验《荒野大镖客》《GTA》《刺客信条》《辐射》等多款开放世界作品。">Deep hands-on experience across titles such as Red Dead Redemption, GTA, Assassin's Creed, and Fallout.</li>
+            <li data-en="Pay close attention to differences in narrative design, mission structure, exploration freedom, and combat systems." data-zh="重点关注剧情叙事、任务结构、探索自由度与战斗系统设计差异。">Pay close attention to differences in narrative design, mission structure, exploration freedom, and combat systems.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7: PRODUCT THINKING
        ============================================================ -->
   <section id="thinking" class="section section--alt">
     <div class="container">
@@ -537,16 +631,51 @@
     // Language Toggle Functionality
     const langToggle = document.getElementById('langToggle');
     const langText = document.querySelector('.lang-text');
+    const resumeDropdown = document.getElementById('resumeDropdown');
+    const resumeToggle = document.getElementById('resumeToggle');
+    const resumeMenu = document.getElementById('resumeMenu');
+    const navSectionLinks = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
     let currentLang = localStorage.getItem('language') || 'en';
     
     // Set initial language
     updateLanguage(currentLang);
+    initSectionNavHighlight();
+    initPageAnimations();
     
     langToggle.addEventListener('click', () => {
       currentLang = currentLang === 'en' ? 'zh' : 'en';
       updateLanguage(currentLang);
       localStorage.setItem('language', currentLang);
     });
+
+    if (resumeToggle && resumeMenu && resumeDropdown) {
+      const closeResumeMenu = () => {
+        resumeMenu.hidden = true;
+        resumeToggle.setAttribute('aria-expanded', 'false');
+      };
+
+      resumeToggle.addEventListener('click', () => {
+        const isHidden = resumeMenu.hidden;
+        resumeMenu.hidden = !isHidden;
+        resumeToggle.setAttribute('aria-expanded', String(isHidden));
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!resumeDropdown.contains(event.target)) {
+          closeResumeMenu();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeResumeMenu();
+        }
+      });
+
+      resumeMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeResumeMenu);
+      });
+    }
     
     function updateLanguage(lang) {
       // Update language toggle button text
@@ -559,10 +688,109 @@
         if (text) {
           if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
             element.placeholder = text;
+          } else if (element.closest('.about-text')) {
+            element.innerHTML = text;
           } else {
             element.textContent = text;
           }
         }
+      });
+    }
+
+    function initSectionNavHighlight() {
+      const sectionMap = navSectionLinks
+        .map((link) => {
+          const target = document.querySelector(link.getAttribute('href'));
+          return target ? { link, target } : null;
+        })
+        .filter(Boolean);
+
+      if (!sectionMap.length) {
+        return;
+      }
+
+      const setActiveLink = (id) => {
+        navSectionLinks.forEach((link) => {
+          const isActive = link.getAttribute('href') === `#${id}`;
+          link.classList.toggle('active', isActive);
+          if (isActive) {
+            link.setAttribute('aria-current', 'page');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      };
+
+      navSectionLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          const id = link.getAttribute('href').slice(1);
+          setActiveLink(id);
+        });
+      });
+
+      const navObserver = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+          if (visible.length) {
+            setActiveLink(visible[0].target.id);
+          }
+        },
+        {
+          rootMargin: '-30% 0px -55% 0px',
+          threshold: [0.15, 0.35, 0.55]
+        }
+      );
+
+      sectionMap.forEach(({ target }) => navObserver.observe(target));
+
+      const hashId = window.location.hash.replace('#', '');
+      const hasHashTarget = sectionMap.some(({ target }) => target.id === hashId);
+      setActiveLink(hasHashTarget ? hashId : sectionMap[0].target.id);
+    }
+
+    function initPageAnimations() {
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reducedMotion) {
+        return;
+      }
+
+      const sections = document.querySelectorAll('.hero, .section, .footer');
+      sections.forEach((element) => {
+        element.classList.add('reveal-on-scroll');
+      });
+
+      const staggerGroups = document.querySelectorAll(
+        '.about-highlights, .education-grid, .skills-grid, .experience-list, .projects-grid, .gaming-grid, .thinking-grid'
+      );
+
+      staggerGroups.forEach((group) => {
+        const children = Array.from(group.children);
+        children.forEach((child, index) => {
+          child.classList.add('reveal-on-scroll');
+          child.style.transitionDelay = `${Math.min(index * 90, 600)}ms`;
+        });
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -8% 0px'
+        }
+      );
+
+      document.querySelectorAll('.reveal-on-scroll').forEach((element) => {
+        observer.observe(element);
       });
     }
   </script>
